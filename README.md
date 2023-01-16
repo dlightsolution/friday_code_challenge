@@ -1,5 +1,5 @@
 # CODE CHALLENGE
-Following is my submission to the code challenge provided by FRIDAY as part of their selection process.
+Following is my submission to the code challenge provided by [FRIDAY](https://www.friday.de/) as part of their selection process.
 ## Addressline
 An address provider returns addresses only with concatenated street names and numbers. Our own system on the other hand has separate fields for street name and street number.
 
