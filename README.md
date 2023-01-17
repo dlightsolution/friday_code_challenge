@@ -28,8 +28,9 @@ I have used VS Code as a code editor.<br>
 Python and pandas to manipulate the address strings.<br>
 Google and ChatGPT as mentors.
 ## How to Run?
-1. Clone or download.
-2. Run python main.py.
+1. pip install -r requirements.txt
+2. Clone or download.
+3. Run python main.py.
 
 This will let you test one address at a time.
 ## How to test multiple addresses?
@@ -64,7 +65,7 @@ This will not work for addresses that:
 2. Has a suffix for the house number different from "No":
    1. `"Av Raccada Apt 15"` -> `{"street": "Av Raccada", "housenumber": "15"}`
 ## Other Approches
-Another approch to solve this challenge is using regex (regular expression) but I preferred to avoid it as the expression tends become very complex and difficult to read and understand. The solution will not scale well as we add add other variation of addresses.<r>
+Another approch to solve this challenge is using regex (regular expression) but I preferred to avoid it as the expression tends become very complex and difficult to read and understand. The solution will not scale well as we add add other variation of addresses.<br>
 The approch I would go for is using a combination of rule-based and machine learning methods like Named Entity Recognition (NER) to extract structured data from unstructured text.<br>
 Here is a toolkit that could be used to train a probabilistic parser to extract data from addresses.<br>
 And here is a python library built on top of it.
