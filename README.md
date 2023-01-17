@@ -65,13 +65,9 @@ This will not work for addresses that:
 2. Has a suffix for the house number different from "No":
    1. `"Av Raccada Apt 15"` -> `{"street": "Av Raccada", "housenumber": "15"}`
 ## Other Approches
+### Regex
 Another approch to solve this challenge is using regex (regular expression) but I preferred to avoid it as the expression tends become very complex and difficult to read and understand. The solution will not scale well as we add add other variation of addresses.<br>
+### NLP
 The approch I would go for is using a combination of rule-based and machine learning methods like Named Entity Recognition (NER) to extract structured data from unstructured text.<br>
-Here is a toolkit that could be used to train a probabilistic parser to extract data from addresses.<br>
-And here is a python library built on top of it.
-
-
-
-
-
-
+[Parserator](https://github.com/datamade/parserator) is a toolkit that could be used to train a probabilistic parser to extract data from addresses.<br>
+And [usaddress](https://github.com/datamade/usaddress) is a python library built on top of it.
