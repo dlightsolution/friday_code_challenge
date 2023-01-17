@@ -62,7 +62,7 @@ This will not work for addresses that:
 1. Starts with the house number and the streetname contains a numeric or an alphanumeric value, e.g.
    1. `"8, rue 9 Avril"` -> `{"street": "8 rue", "housenumber": "9 Avril"}`
 2. Has a suffix for the house number different from "No":
-   1. `"Av Raccada Apt 15"` -> `{"street": "Av Raccada", "housenumber": "15"}`
+   1. `"Av Raccada Apt 15"` -> `{"street": "Av Raccada Apt", "housenumber": "15"}`
 ## Other Approches
 ### Regex
 Another approch to solve this challenge is using regex (regular expression) but I preferred to avoid it as the expression tends become very complex and difficult to read and understand. The solution will not scale well as we add add other variation of addresses.<br>
