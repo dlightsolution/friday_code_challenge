@@ -12,9 +12,7 @@ def test_addresses():
         words = MyFunctions.split_address(row['address'])
         idx = MyFunctions.parse_words(words)
         data = MyFunctions.assign_values(idx, words)
-        #print(data)
-        #print({"street": row["streetname"], "housenumber": row["housenumber"]})
-        #This will compare the json output from the main.py file with the expected output
+        #This will compare the json output from the main.py (data) file with the expected output
         if data == {"street": row["streetname"], "housenumber": row["housenumber"]}:
             positiveaddresses.append(row["address"])
         else:
