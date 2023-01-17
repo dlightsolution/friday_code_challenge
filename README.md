@@ -47,14 +47,13 @@ the main.py is our entry point and imports MyFunctions class from functions.py t
 3. Splits address into words.
 4. Finds the last numerical value.
 5. Assigns the street and housenumber considering the following constraints:
+   1. House numbers that starts with a suffix "No":
+   `"Calle 39 No 1540" outputs "No 1540"`
+   2. House numbers that are alphanumeric:
+   `"Blaufeldweg 123B"`
+   3. Alphanumeric housenumbers with white space:
+    `"Auf der Vogelwiese 23 b"`
 
-   1.House numbers that starts with a suffix "No":
-   "Calle 39 No 1540" outputs "No 1540"
-   2.House numbers that are alphanumeric:
-   "Blaufeldweg 123B"
-   3.Alphanumeric housenumbers with white space:
-   "Auf der Vogelwiese 23 b"
-   
 6. Outputs results in json format.
 
 Further explanation of the functions are included along the code in the comments.
