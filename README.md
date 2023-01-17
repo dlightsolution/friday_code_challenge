@@ -31,19 +31,21 @@ Google and ChatGPT as mentors.
 1. Clone or download.
 2. Run python main.py.
 
-This will let you test one address at a time. To test multiple addresses
-## How to test other addresses?
+This will let you test one address at a time.
+## How to test multiple addresses?
 1. Create a csv file with the following column names: address,streetname,housenumber.
-2.Fill the file accordingly
-3.Save a
-3.Run python addresses.py
-This will test the streetnames and housenumbers found in "addresses.csv" and cross-validates them against the streetnames and housenumbers identified by our program.
+2. Fill the file accordingly.
+3. Save as addresses.csv.
+4. Run python test.py.
+
+This will cross-validates the streetnames and housenumbers found in "addresses.csv" against the streetnames and housenumbers identified by our program.
 Feel free to test with a bunch of other addresses.
 ## How does it work?
-1.Reads address from user input.
-2.Creates a DataFrame with an address column.
-3.Parses the words and finds the last numerical value.
-4.Assigns the street and housenumber considering the following constraints:
+the main.py is our entry point and imports MyFunctions class from functions.py to perform the following:
+1. Reads address from input.
+3. Splits address into words.
+4. Finds the last numerical value.
+5. Assigns the street and housenumber considering the following constraints:
 
    1.House numbers that starts with a suffix "No":
    "Calle 39 No 1540" outputs "No 1540"
@@ -51,6 +53,24 @@ Feel free to test with a bunch of other addresses.
    "Blaufeldweg 123B"
    3.Alphanumeric housenumbers with white space:
    "Auf der Vogelwiese 23 b"
-5.Outputs results in json format
+   
+6. Outputs results in json format.
+
+Further explanation of the functions are included along the code in the comments.
 ## Limitations
+This will not work for addresses that:
+1. Starts with the house number and the streetname contains a numeric or an alphanumeric value, e.g.
+   1. `"8, rue 9 Avril"` -> `{"street": "8 rue", "housenumber": "9 Avril"}`
+2. Has a suffix for the house number different from "No":
+   1. `"Av Raccada Apt 15"` -> `{"street": "Av Raccada", "housenumber": "15"}`
 ## Other Approches
+Another approch to solve this challenge is using regex (regular expression) but I preferred to avoid it as the expression tends become very complex and difficult to read and understand. The solution will not scale well as we add add other variation of addresses.<r>
+The approch I would go for is using a combination of rule-based and machine learning methods like Named Entity Recognition (NER) to extract structured data from unstructured text.<br>
+Here is a toolkit that could be used to train a probabilistic parser to extract data from addresses.<br>
+And here is a python library built on top of it.
+
+
+
+
+
+
