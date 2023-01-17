@@ -29,7 +29,7 @@ Python and pandas to manipulate the address strings.<br>
 Google and ChatGPT as mentors.
 ## How to Run?
 1. pip install -r requirements.txt
-2. Clone or download.
+2. Clone or download repo.
 3. Run python main.py.
 
 This will let you test one address at a time.
