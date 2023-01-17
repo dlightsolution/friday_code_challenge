@@ -28,11 +28,11 @@ I have used VS Code as a code editor.<br>
 Python and pandas to manipulate the address strings.<br>
 Google and ChatGPT as mentors.
 ## How to Run?
-1.Clone or download.
-2.Run python main.py
+1. Clone or download.
+2. Run python main.py.
 This will let you test one address at a time. To test multiple addresses
 ## How to test other addresses?
-1.Create a csv file with the following column names: address,streetname,housenumber.
+1. Create a csv file with the following column names: address,streetname,housenumber.
 2.Fill the file accordingly
 3.Save a
 3.Run python addresses.py
