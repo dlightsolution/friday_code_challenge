@@ -24,8 +24,8 @@ An address provider returns addresses only with concatenated street names and nu
 print(json.dumps({'Alex': 1, 'Suresh': 2, 'Agnessa': 3}))`{"street": "Calle 39", "housenumber": "No 1540"}`
 # Solution
 ## Technology used
-I have used VS Code as a code editor.
-Python and pandas to manipulate the address strings.
+I have used VS Code as a code editor.<br>
+Python and pandas to manipulate the address strings.<br>
 Google and ChatGPT as mentors.
 ## How to Run?
 1.Clone or download.
